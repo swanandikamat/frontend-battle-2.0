@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Frontend Battle | Homepage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <!-- Swiper.js CDN -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+</head>
+<body>
+
+  <!-- 🌐 Navbar -->
+  <nav class="navbar">
+  <div class="logo">Frontend<span>Battle</span></div>
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#contact">Contact</a></li>
+       <li><button id="themeToggle" title="Toggle Dark Mode">🌙</button></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <!-- 🎬 Hero Section -->
+  <header class="hero">
+    <video autoplay muted loop playsinline class="background-video">
+      <source src="C:\Users\swana\OneDrive\Desktop\frontend-battle-2.0\assests\video.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+      <h1>Welcome to Frontend Battle 2.0</h1>
+      <p>Code. Replicate. Innovate.</p>
+      <a href="#brands" class="cta-btn">Get Started</a>
+    </div>
+    <div class="scroll-down">⬇</div>
+  </header>
+  
+
+  <!-- 🎨 Brand Kits Section -->
+<section id="brands" class="brand-kits">
+  <h2>Brand Kits</h2>
+  <div class="kit-list">
+    <div class="kit-card">
+      <div class="kit-left">
+        <div class="check"></div>
+        <div class="palette">
+          <span class="dot green"></span>
+          <span class="dot white"></span>
+        </div>
+        <span class="kit-name">ECorp</span>
+      </div>
+      <div class="kit-action">
+        <i class="icon">⚙️</i>
+      </div>
+    </div>
+
+    <div class="kit-card">
+      <div class="kit-left">
+        <div class="check"></div>
+        <div class="palette">
+          <span class="dot orange"></span>
+          <span class="dot white"></span>
+        </div>
+        <span class="kit-name">ICorp</span>
+      </div>
+      <div class="kit-action">
+        <i class="icon">⚙️</i>
+      </div>
+    </div>
+
+    <div class="kit-card selected">
+      <div class="kit-left">
+        <div class="check selected-check">✔</div>
+        <div class="palette">
+          <span class="dot red"></span>
+          <span class="dot white"></span>
+        </div>
+        <span class="kit-name">The Agency</span>
+      </div>
+      <div class="kit-action">
+        <i class="icon">⚙️</i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 🚀 Brand Kits Carousel Switch -->
+<section class="brand-carousel">
+  <h2>Brand Kits</h2>
+  <div class="swiper brand-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide kit-card selected">
+        <div class="check selected-check">✔</div>
+        <div class="palette">
+          <span class="dot green"></span>
+          <span class="dot white"></span>
+        </div>
+        <span class="kit-name">ECorp</span>
+      </div>
+
+      <div class="swiper-slide kit-card">
+        <div class="check"></div>
+        <div class="palette">
+          <span class="dot orange"></span>
+          <span class="dot white"></span>
+        </div>
+        <span class="kit-name">ICorp</span>
+      </div>
+
+      <div class="swiper-slide kit-card">
+        <div class="check"></div>
+        <div class="palette">
+          <span class="dot red"></span>
+          <span class="dot white"></span>
+        </div>
+        <span class="kit-name">The Agency</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 👥 Testimonials Section -->
+<section class="testimonials" id="testimonials">
+  <h2>What Our Participants Say</h2>
+  <div class="swiper testimonial-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide testimonial-card">
+        <img src="C:\Users\swana\OneDrive\Desktop\frontend-battle-2.0\assests\avatar1.png" alt="Aarav Sharma" />
+        <h3>Aarav Sharma</h3>
+        <p>"Frontend Battle boosted my confidence. The UI challenges were 🔥!"</p>
+      </div>
+      <div class="swiper-slide testimonial-card">
+        <img src="C:\Users\swana\OneDrive\Desktop\frontend-battle-2.0\assests\avatar2.png" alt="Diya Patel" />
+        <h3>Diya Patel</h3>
+        <p>"Loved the creative energy. Competing with others pushed my limits."</p>
+      </div>
+      <div class="swiper-slide testimonial-card">
+        <img src="C:\Users\swana\OneDrive\Desktop\frontend-battle-2.0\assests\avatar3.png" alt="Rohan Mehta" />
+        <h3>Rohan Mehta</h3>
+        <p>"Well-organized and super fun! Can't wait for the next edition."</p>
+      </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- Pagination Dots -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<!-- 📘 About Section -->
+<section id="about" class="about-section">
+  <h2>About Frontend Battle</h2>
+  <p>
+    Frontend Battle is a coding competition that challenges developers to replicate modern UI designs using HTML, CSS, and JavaScript. It's a creative space to learn, compete, and innovate.
+  </p>
+</section>
+
+<!-- 🚀 Features Section -->
+<section id="features" class="features-section">
+  <h2>Features</h2>
+  <div class="features-grid">
+    <div class="feature-item">
+      <h3>Live Challenges</h3>
+      <p>Compete with other developers on real-world frontend tasks.</p>
+    </div>
+    <div class="feature-item">
+      <h3>Leaderboard</h3>
+      <p>Track your progress and climb the ranks.</p>
+    </div>
+    <div class="feature-item">
+      <h3>Instant Feedback</h3>
+      <p>See how your designs compare to the originals in real time.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 📬 Contact Section -->
+<section id="contact" class="contact-section">
+  <h2>Contact Us</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+
+  <!-- 👥 Customer Section -->
+<section class="customers" id="customers">
+  <h2>What Our Participants Say</h2>
+  <div class="customer-cards">
+    <div class="customer-card">
+      <img src="C:\Users\swana\OneDrive\Desktop\frontend-battle-2.0\assests\avatar1.png" alt="User 1" />
+      <h3>Aarav Sharma</h3>
+      <p>"Frontend Battle boosted my confidence. The UI challenges were 🔥!"</p>
+    </div>
+    <div class="customer-card">
+      <img src="C:\Users\swana\OneDrive\Desktop\frontend-battle-2.0\assests\avatar2.png" alt="User 2" />
+      <h3>Diya Patel</h3>
+      <p>"Loved the creative energy. Competing with others pushed my limits."</p>
+    </div>
+    <div class="customer-card">
+      <img src="C:\Users\swana\OneDrive\Desktop\frontend-battle-2.0\assests\avatar3.png" alt="User 3" />
+      <h3>Rohan Mehta</h3>
+      <p>"Well-organized and super fun! Can't wait for the next edition."</p>
+    </div>
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".testimonial-swiper", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+  });
+</script>
+<script>
+  const cards = document.querySelectorAll(".kit-card");
+
+  cards.forEach(card => {
+    card.addEventListener("click", () => {
+      // Remove selection from all cards
+      cards.forEach(c => {
+        c.classList.remove("selected");
+        const check = c.querySelector(".check");
+        check.classList.remove("selected-check");
+        check.textContent = "";
+      });
+
+      // Add selection to clicked card
+      card.classList.add("selected");
+      const check = card.querySelector(".check");
+      check.classList.add("selected-check");
+      check.textContent = "✔";
+
+      // Optional: do something on select
+      const brand = card.querySelector(".kit-name").textContent;
+      console.log(`Selected brand: ${brand}`);
+    });
+  });
+</script>
+</body>
+</html>
